@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+	
+	<head>
+		
+		<title>CodePlayer</title>
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+		<script type = "text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<link rel = "stylesheet" href = "jquery-ui.css">
+		
+		<link rel="stylesheet" type="text/css" href="CodePlayer.css">
+		
+	</head>
+	
+	<body>
+		
+		<div id = "topBar">
+			
+			<span id = "title">CodePlayer</span>
+			
+			<span id = "toggle">
+			
+				<button id = "htmlToggle" class = "toggleButton">HTML</button>
+				
+				<button id = "cssToggle" class = "toggleButton">CSS</button>
+				
+				<button id = "javascriptToggle" class = "toggleButton">JavaScript</button>
+				
+				<button id = "outputToggle" class = "toggleButton">Output</button>
+				
+			</span>
+			
+		</div>
+		
+		<div id = "content">
+			
+			<div id = "htmlContainer" class = "codeContainer">
+				
+				<h3 class = "codeHeader">HTML</h3>
+				
+				<textarea id = "htmlCode" class = "codeInput"></textarea>
+				
+			</div>
+			
+			<div id = "cssContainer" class = "codeContainer">
+				
+				<h3 class = "codeHeader">CSS</h3>
+				
+				<textarea id = "cssCode" class = "codeInput"></textarea>
+				
+			</div>
+			
+			<div id = "javascriptContainer" class = "codeContainer">
+				
+				<h3 class = "codeHeader">JavaScript</h3>
+				
+				<textarea id = "javascriptCode" class = "codeInput"></textarea>
+				
+			</div>
+			
+			<div id = "outputContainer" class = "codeContainer">
+				
+				<h3 class = "codeHeader">Output</h3>
+				
+				<iframe id = "outputCode" class = "codeInput"></iframe>
+				
+			</div>
+			
+		</div>
+		
+		
+		<script type = "text/javascript" src = "CodePlayer.js"></script>
+		
+	</body>
+	
+</html>

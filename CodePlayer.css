@@ -1,0 +1,98 @@
+#topBar {
+				
+				background: #e5e3e3;
+				box-sizing: border-box;
+				height: auto;
+				width: 100%;
+				padding: 5px;
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				grid-template-areas:
+				"title . toggle . ."
+				
+			}
+			
+			#title {
+				
+				font-weight: bold;
+				font-size: 200%;
+				font-family: arial black;
+				grid-area: title;
+				
+			}
+			
+			#toggle {
+				
+				grid-area: toggle;
+				text-align: center;
+				font-size: 0;
+				
+			}
+			
+			button {
+				
+				height: 100%;
+				font-weight: bold;
+				
+			}
+			
+			.codeContainer {
+				
+				font-family: monospace;
+				box-sizing: border-box;
+				width: 25%;
+				display: inline-block;
+				float: left;
+				border-right: 2px solid #e5e3e3;
+				
+			}
+			
+			.codeContainer:last-child {
+				
+				border-right: none;
+				
+			}
+			
+			 .codeHeader {
+				
+				margin: 0;
+				padding: 5px 0;
+				text-align: center;
+				box-sizing: border-box;
+				
+			}
+			
+			.codeInput{
+				
+				width: 100%;
+				box-sizing: border-box;
+				border: none;
+				resize: none;
+				
+			}
+			
+			.display {
+					
+					display: none;
+					
+				}
+			
+			
+			@media only screen and (max-width: 1300px) {
+				
+				#topBar {
+				
+					grid-template-columns: repeat(1, 1fr);
+					grid-template-areas:
+					"title"
+					"toggle";
+				
+				}
+				
+				#title {
+					
+					text-align: center;
+					
+				}
+				
+			}
